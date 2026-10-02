@@ -1305,3 +1305,17 @@ footer strong {
         height: 10%;
     }
 }
+/* Ajuste de las imágenes de las fichas */
+.topic-image {
+    height: 170px;
+    margin: 10px 0 14px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.topic-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
