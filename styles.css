@@ -1187,6 +1187,245 @@ footer strong {
     }
 
 }
+
+/* Apartado didáctico: componentes del sistema */
+.components-topic .rc-diagram img {
+    width: 100%;
+}
+
+.component-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin: 18px 0;
+}
+
+.component-grid-three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.component-card {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px 19px;
+    border: 1px solid #d8eafb;
+    border-radius: 17px;
+    background: #f8fcff;
+}
+
+.component-art {
+    display: block;
+    width: 140px;
+    height: 90px;
+    max-width: 100%;
+    margin: 0 0 10px;
+    overflow: visible;
+}
+
+.component-art path,
+.component-art rect,
+.component-art circle {
+    vector-effect: non-scaling-stroke;
+}
+
+.component-art .coil-cold,
+.component-art .coil-warm,
+.component-art .valve-pipe,
+.component-art .compressor-line,
+.component-art .compressor-base,
+.component-art .valve-stem,
+.component-art .aux-detail,
+.component-art .drain-line,
+.component-art .control-mark,
+.component-art .electric-line,
+.component-art .board-trace {
+    fill: none;
+    stroke: #1688d5;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.component-art .coil-warm,
+.component-art .pipe-hot {
+    stroke: #ff842a;
+}
+
+.component-art .coil-fin {
+    fill: none;
+    stroke: #9ecff0;
+    stroke-width: 2;
+}
+
+.component-art .compressor-shell,
+.component-art .aux-body,
+.component-art .control-box,
+.component-art .filter-frame,
+.component-art .board {
+    fill: #e8f4fc;
+    stroke: #54748f;
+    stroke-width: 3;
+}
+
+.component-art .compressor-base,
+.component-art .compressor-line {
+    stroke: #54748f;
+}
+
+.component-art .compressor-shell {
+    fill: #d8e7f1;
+}
+
+.component-art .compressor-line {
+    stroke: #8ba6ba;
+}
+
+.component-art .compressor-base {
+    stroke-width: 3;
+}
+
+.component-art .valve-body,
+.component-art .fan-blade {
+    fill: #f8c969;
+    stroke: #b77c21;
+    stroke-width: 2;
+    stroke-linejoin: round;
+}
+
+.component-art .sight-ring,
+.component-art .fan-ring {
+    fill: #f4faff;
+    stroke: #66849d;
+    stroke-width: 3;
+}
+
+.component-art .sight-fluid,
+.component-art .fan-hub,
+.component-art .sensor-dot {
+    fill: #42b9ee;
+    stroke: #1688d5;
+    stroke-width: 2;
+}
+
+.component-art .filter-line {
+    fill: none;
+    stroke: #83b9dc;
+    stroke-width: 3;
+}
+
+.component-art .drain-pan {
+    fill: #e6f3fc;
+    stroke: #66849d;
+    stroke-width: 3;
+    stroke-linejoin: round;
+}
+
+.component-art .water-drop {
+    fill: #62c8f2;
+    stroke: #1688d5;
+    stroke-width: 2;
+}
+
+.component-art .control-screen {
+    fill: #d6f2ff;
+    stroke: #80adc9;
+    stroke-width: 2;
+}
+
+.component-art .board-trace {
+    stroke: #589273;
+    stroke-width: 2.5;
+}
+
+.component-art .chip {
+    fill: #345e78;
+    stroke: #25485e;
+    stroke-width: 2;
+}
+
+.component-art .pipe-cold {
+    fill: none;
+    stroke: #1688d5;
+    stroke-width: 6;
+    stroke-linecap: round;
+}
+
+.component-art .pipe-cover {
+    fill: none;
+    stroke: #b6cad8;
+    stroke-width: 3;
+    stroke-dasharray: 6 4;
+}
+
+.component-card h4 {
+    margin: 0 0 7px;
+    color: var(--rc-ink);
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.component-card p {
+    margin: 0 0 13px;
+    color: var(--rc-text);
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.component-location {
+    display: inline-flex;
+    align-items: center;
+    margin-top: auto;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #e8f5ff;
+    color: #126caa;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.component-location.warm {
+    background: #fff1e5;
+    color: #be5a14;
+}
+
+.component-reading-list {
+    display: grid;
+    gap: 10px;
+    margin: 15px 0 20px;
+    padding-left: 23px;
+}
+
+.component-reading-list li::marker {
+    color: var(--rc-blue);
+    font-weight: 800;
+}
+
+.component-note {
+    padding: 17px 19px;
+    border: 1px solid #c8e2f7;
+    border-radius: 15px;
+    background: #f1f8fe;
+    color: var(--rc-text);
+    line-height: 1.65;
+}
+
+.component-note strong {
+    color: var(--rc-ink);
+}
+
+@media (max-width: 760px) {
+    .component-grid,
+    .component-grid-three {
+        grid-template-columns: 1fr;
+    }
+
+    .component-card {
+        padding: 16px;
+    }
+}
 /* =========================================================
    HERO COMPLETO - IMAGEN DEFINITIVA
 ========================================================= */

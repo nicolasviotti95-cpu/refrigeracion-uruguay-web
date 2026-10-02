@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprendé qué función cumple cada componente de un sistema de refrigeración y cómo trabajan juntos.">
+  <title>Componentes | Refrigeración Uruguay</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html#inicio" class="logo">
+      <span class="logo-icon">❄</span>
+      <span class="logo-text"><strong>REFRIGERACIÓN</strong><small>URUGUAY</small></span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html#inicio">Inicio</a>
+      <a href="refrigeracion.html">Refrigeración</a>
+      <a href="aire-acondicionado.html">Aire acondicionado</a>
+      <a href="componentes.html" class="active">Componentes</a>
+      <a href="index.html#gases-refrigerantes">Gases refrigerantes</a>
+    </nav>
+    <a href="#apartado-componentes" class="header-button">Comenzar <span>→</span></a>
+  </header>
+  <main>
+    <section class="rc-section components-topic" id="apartado-componentes" aria-labelledby="components-title">
+      <div class="rc-wrap">
+        <header class="rc-heading" id="los-principales">
+          <span class="rc-eyebrow">RECORRIDO PRINCIPAL</span>
+          <h2 id="components-title">Conocé las piezas que hacen posible el ciclo</h2>
+          <p>Identificá los componentes de un sistema frigorífico, qué transformación ocurre en cada uno y cómo se conectan para trasladar calor.</p>
+        </header>
+
+        <figure class="rc-diagram">
+          <img src="assets/esquema-componentes.svg" alt="Diagrama original del ciclo con evaporador, compresor, condensador y dispositivo de expansión conectados en un circuito cerrado.">
+          <figcaption>Los cuatro componentes principales forman un circuito. El refrigerante circula por las tuberías y cada intercambiador cede o absorbe calor.</figcaption>
+        </figure>
+
+        <aside class="rc-key-idea">
+          <span class="rc-key-label">LA IDEA CENTRAL</span>
+          <p>Cada componente cumple una tarea distinta: <strong>el evaporador y el condensador intercambian calor, el compresor impulsa el refrigerante y la expansión regula su paso</strong>. Ninguno enfría por sí solo: el resultado depende de que todo el sistema trabaje coordinado.</p>
+        </aside>
+
+        <div class="rc-lessons-heading">
+          <span class="rc-eyebrow">APRENDÉ POR ETAPAS</span>
+          <h3>Explorá cada familia de componentes</h3>
+          <p>Los equipos pueden combinar las piezas de maneras distintas. Abrí cada tema y ubicá qué es común y qué depende del diseño.</p>
+        </div>
+
+        <div class="rc-lessons">
+          <details class="rc-lesson" open>
+            <summary><span class="rc-number">01</span><span class="rc-summary-text">Los cuatro componentes principales</span><span class="rc-toggle" aria-hidden="true"></span></summary>
+            <div class="rc-lesson-body">
+              <p>En el ciclo de compresión de vapor, el refrigerante pasa repetidamente por cuatro funciones básicas. En sistemas reales puede haber válvulas, controles e intercambiadores adicionales.</p>
+              <div class="component-grid">
+                <article class="component-card">
+                  <svg class="component-art" viewBox="0 0 140 90" role="img" aria-label="Dibujo de un serpentín evaporador"><path class="coil-cold" d="M24 18v54h18V18h18v54h18V18h18v54h18V18"/><path class="coil-fin" d="M17 22h104M17 34h104M17 46h104M17 58h104M17 70h104"/></svg>
+                  <h4>Evaporador</h4><p>Recibe refrigerante frío y de baja presión. Absorbe calor del aire o del producto que se quiere enfriar; el refrigerante hierve y sale principalmente como vapor.</p>
+                  <span class="component-location cold">Absorbe calor</span>
+                </article>
+                <article class="component-card">
+                  <svg class="component-art" viewBox="0 0 140 90" role="img" aria-label="Dibujo de un compresor hermético"><path class="compressor-shell" d="M42 70V34c0-17 12-26 28-26s28 9 28 26v36c0 8-7 12-28 12s-28-4-28-12Z"/><path class="compressor-line" d="M55 24c8-7 22-7 30 0M55 70h30M70 8V1M98 35h20v-9"/><path class="compressor-base" d="M34 82h72m-58 0-7 6m53-6 7 6"/></svg>
+                  <h4>Compresor</h4><p>Aspira vapor desde el lado de baja y lo comprime. Así eleva su presión y temperatura, y mantiene la circulación del refrigerante.</p>
+                  <span class="component-location warm">Aporta trabajo al ciclo</span>
+                </article>
+                <article class="component-card">
+                  <svg class="component-art" viewBox="0 0 140 90" role="img" aria-label="Dibujo de un serpentín condensador"><path class="coil-warm" d="M24 18v54h18V18h18v54h18V18h18v54h18V18"/><path class="coil-fin" d="M17 22h104M17 34h104M17 46h104M17 58h104M17 70h104"/></svg>
+                  <h4>Condensador</h4><p>Recibe vapor caliente y de alta presión. Libera calor al aire, al agua u otro medio y el refrigerante pasa principalmente a líquido.</p>
+                  <span class="component-location warm">Libera calor</span>
+                </article>
+                <article class="component-card">
+                  <svg class="component-art" viewBox="0 0 140 90" role="img" aria-label="Dibujo de una válvula de expansión"><path class="valve-pipe" d="M8 45h42m40 0h42"/><path class="valve-body" d="m50 28 20 17-20 17Zm40 0L70 45l20 17Z"/><path class="valve-stem" d="M70 45V20m-13 0h26m-20-7h14"/></svg>
+                  <h4>Dispositivo de expansión</h4><p>Dosifica el caudal que entra al evaporador y provoca una caída de presión. Puede ser un tubo capilar o una válvula, según el equipo.</p>
+                  <span class="component-location cold">Regula el paso</span>
+                </article>
+              </div>
+              <p class="rc-takeaway">Evaporador y condensador son intercambiadores: el nombre de cada uno describe el cambio principal del refrigerante en ese tramo, no una pieza idéntica en todos los equipos.</p>
+            </div>
+          </details>
+
+          <details class="rc-lesson">
+            <summary><span class="rc-number">02</span><span class="rc-summary-text">Componentes auxiliares del circuito</span><span class="rc-toggle" aria-hidden="true"></span></summary>
+            <div class="rc-lesson-body">
+              <p>Estas piezas ayudan a almacenar, limpiar, proteger o facilitar la lectura del circuito. Su presencia y ubicación dependen del tipo de sistema.</p>
+              <div class="component-grid component-grid-three">
+                <article class="component-card">
+                  <svg class="component-art" viewBox="0 0 140 90" role="img" aria-label="Dibujo de un filtro secador en una tubería"><path class="valve-pipe" d="M6 45h34m60 0h34"/><rect class="aux-body" x="40" y="29" width="60" height="32" rx="15"/><path class="aux-detail" d="M52 36v18m8-18v18m8-18v18m8-18v18m8-18v18"/></svg>
+                  <h4>Filtro secador</h4><p>Retiene partículas y ayuda a reducir humedad dentro del circuito. Protege componentes sensibles, especialmente el dispositivo de expansión.</p>
+                </article>
+                <article class="component-card">
+                  <svg class="component-art" viewBox="0 0 140 90" role="img" aria-label="Dibujo de un recipiente acumulador"><path class="aux-body" d="M42 18h56v50c0 10-11 16-28 16S42 78 42 68Z"/><path class="aux-detail" d="M42 31h56M57 18v28q0 8 13 8"/><path class="valve-pipe" d="M28 18v15h29m26 21h29v-20"/></svg>
+                  <h4>Recipiente y acumulador</h4><p>El recipiente de líquido puede almacenar refrigerante líquido en el lado de alta. El acumulador de succión ayuda a evitar que llegue líquido al compresor. No son la misma pieza y no todos los equipos tienen ambos.</p>
+                </article>
+                <article class="component-card">
+                  <svg class="component-art" viewBox="0 0 140 90" role="img" aria-label="Dibujo de un visor de líquido"><path class="valve-pipe" d="M5 45h40m50 0h40"/><circle class="sight-ring" cx="70" cy="45" r="24"/><circle class="sight-fluid" cx="70" cy="45" r="14"/><path class="aux-detail" d="m62 47 6 6 12-15"/></svg>
+                  <h4>Visor de líquido</h4><p>Una ventana permite observar el fluido en ciertos diseños. Por sí sola, una burbuja o un cambio de color no confirma la causa de una falla ni la carga correcta.</p>
+                </article>
+                <article class="component-card">
+                  <svg class="component-art" viewBox="0 0 140 90" role="img" aria-label="Dibujo de una válvula de servicio"><path class="valve-pipe" d="M10 58h120M70 58V30"/><circle class="aux-body" cx="70" cy="27" r="17"/><path class="aux-detail" d="M58 27h24m-12-12v24m-8-31h16"/></svg>
+                  <h4>Válvulas y puertos de servicio</h4><p>Permiten aislar o acceder a sectores en equipos que los incorporan. Se utilizan en procedimientos técnicos con instrumentos y prácticas adecuadas.</p>
+                </article>
+                <article class="component-card">
+                  <svg class="component-art" viewBox="0 0 140 90" role="img" aria-label="Dibujo de una trampa de aceite y separador"><path class="valve-pipe" d="M14 21v45q0 14 14 14h84q14 0 14-14V21"/><path class="aux-body" d="M54 27h32v39H54z"/><path class="aux-detail" d="M54 52h32m-25 7h18"/></svg>
+                  <h4>Gestión del aceite</h4><p>El aceite lubrica el compresor y circula en cierta medida con el refrigerante. Algunos sistemas añaden separadores o trampas según su diseño y recorrido de tuberías.</p>
+                </article>
+                <article class="component-card">
+                  <svg class="component-art" viewBox="0 0 140 90" role="img" aria-label="Dibujo de tuberías aisladas"><path class="pipe-hot" d="M16 29h108"/><path class="pipe-cold" d="M16 61h108"/><path class="pipe-cover" d="M31 21v48m26-48v48m26-48v48"/></svg>
+                  <h4>Tuberías y aislamiento</h4><p>Conectan las partes por las que circula refrigerante. El diámetro, trazado, soporte y aislamiento se seleccionan para el sistema concreto.</p>
+                </article>
+              </div>
+            </div>
+          </details>
+
+          <details class="rc-lesson">
+            <summary><span class="rc-number">03</span><span class="rc-summary-text">El lado del aire: ventiladores, filtros y drenaje</span><span class="rc-toggle" aria-hidden="true"></span></summary>
+            <div class="rc-lesson-body">
+              <p>El circuito de aire y el de refrigerante se mantienen separados, pero se encuentran térmicamente en los intercambiadores.</p>
+              <div class="component-grid component-grid-three">
+                <article class="component-card">
+                  <svg class="component-art" viewBox="0 0 140 90" role="img" aria-label="Dibujo de un ventilador axial"><circle class="fan-ring" cx="70" cy="45" r="35"/><circle class="fan-hub" cx="70" cy="45" r="7"/><path class="fan-blade" d="M70 38c4-19 15-24 21-19-2 10-8 17-16 23m2 3c19 4 24 15 19 21-10-2-17-8-23-16m-3 2c-4 19-15 24-21 19 2-10 8-17 16-23m-2-3c-19-4-24-15-19-21 10 2 17 8 23 16"/></svg>
+                  <h4>Ventilador o soplador</h4><p>Mueve aire a través de las aletas del intercambiador. El axial es frecuente en unidades exteriores; la turbina o soplador suele impulsar aire en interiores.</p>
+                </article>
+                <article class="component-card">
+                  <svg class="component-art" viewBox="0 0 140 90" role="img" aria-label="Dibujo de un filtro de aire"><rect class="filter-frame" x="31" y="12" width="78" height="66" rx="5"/><path class="filter-line" d="m40 20 18 50m0-50 18 50m0-50 18 50m-54-50 18 50m18-50 18 50"/></svg>
+                  <h4>Filtro de aire</h4><p>Retiene parte del polvo antes de que el aire llegue al serpentín. No es el filtro secador del circuito refrigerante: son piezas distintas y filtran medios diferentes.</p>
+                </article>
+                <article class="component-card">
+                  <svg class="component-art" viewBox="0 0 140 90" role="img" aria-label="Dibujo de una bandeja y drenaje de condensado"><path class="drain-pan" d="M20 28h100l-10 29H30Z"/><path class="drain-line" d="M110 57v12q0 7 9 7h12"/><path class="water-drop" d="M68 16c-8 11-12 16-12 22a12 12 0 0 0 24 0c0-6-4-11-12-22Z"/></svg>
+                  <h4>Bandeja y drenaje</h4><p>Recogen y conducen el agua que se condensa sobre una superficie fría. El agua de drenaje no es refrigerante: procede de la humedad del aire.</p>
+                </article>
+              </div>
+              <p class="rc-takeaway">Serpentín limpio, filtro apropiado y flujo de aire libre ayudan al intercambio; las tareas de acceso interno dependen del equipo y deben seguir sus indicaciones.</p>
+            </div>
+          </details>
+
+          <details class="rc-lesson">
+            <summary><span class="rc-number">04</span><span class="rc-summary-text">Controles y elementos eléctricos</span><span class="rc-toggle" aria-hidden="true"></span></summary>
+            <div class="rc-lesson-body">
+              <div class="component-grid component-grid-three">
+                <article class="component-card">
+                  <svg class="component-art" viewBox="0 0 140 90" role="img" aria-label="Dibujo de un termostato y sensor"><rect class="control-box" x="35" y="12" width="70" height="66" rx="12"/><rect class="control-screen" x="46" y="23" width="48" height="20" rx="4"/><path class="control-mark" d="M55 57h30m-24 8h18"/><circle class="sensor-dot" cx="70" cy="33" r="4"/></svg>
+                  <h4>Termostato y sensores</h4><p>El control compara las mediciones con el ajuste elegido. Sensores de temperatura pueden vigilar el aire, serpentines u otras condiciones según el equipo.</p>
+                </article>
+                <article class="component-card">
+                  <svg class="component-art" viewBox="0 0 140 90" role="img" aria-label="Dibujo de una placa de control"><rect class="board" x="26" y="12" width="88" height="66" rx="6"/><path class="board-trace" d="M42 28h20v15h28m-48 8h15v14h32m0-37v16h14m-22 7v14"/><circle class="sensor-dot" cx="42" cy="28" r="4"/><circle class="sensor-dot" cx="90" cy="43" r="4"/><rect class="chip" x="63" y="25" width="18" height="18" rx="3"/></svg>
+                  <h4>Placa electrónica</h4><p>Coordina sensores, ventiladores y compresor; en equipos modernos puede modular la capacidad y gestionar protecciones y modos.</p>
+                </article>
+                <article class="component-card">
+                  <svg class="component-art" viewBox="0 0 140 90" role="img" aria-label="Dibujo de contactos eléctricos"><rect class="control-box" x="34" y="18" width="72" height="54" rx="7"/><path class="electric-line" d="M17 32h23m66 0h18M17 58h23m66 0h18M51 43l15-11m8 26 15-11"/><circle class="sensor-dot" cx="48" cy="32" r="4"/><circle class="sensor-dot" cx="92" cy="58" r="4"/></svg>
+                  <h4>Alimentación y protecciones</h4><p>Conductores, conexiones, dispositivos de maniobra y protecciones suministran y controlan la energía eléctrica. Su configuración varía con la potencia y el diseño.</p>
+                </article>
+              </div>
+              <p>Capacitores, contactores, relés, variadores y otros elementos aparecen en algunos equipos. La placa y el esquema eléctrico del modelo permiten identificar qué tiene cada uno.</p>
+            </div>
+          </details>
+
+          <details class="rc-lesson">
+            <summary><span class="rc-number">05</span><span class="rc-summary-text">Piezas opcionales y diferencias entre equipos</span><span class="rc-toggle" aria-hidden="true"></span></summary>
+            <div class="rc-lesson-body">
+              <div class="rc-two-columns">
+                <div class="rc-note rc-note-cold"><h4>Equipo solo frío</h4><p>El intercambiador interior actúa como evaporador y el exterior como condensador durante el enfriamiento.</p></div>
+                <div class="rc-note rc-note-warm"><h4>Bomba de calor</h4><p>Una válvula inversora y otros controles permiten invertir la función de los intercambiadores para calentar o enfriar.</p></div>
+              </div>
+              <ul class="rc-state-list">
+                <li><strong>Capilar:</strong> tubo estrecho de longitud y diámetro definidos que dosifica el refrigerante en diseños sencillos.</li>
+                <li><strong>Válvula termostática o electrónica:</strong> regula el paso de refrigerante de manera diferente según el diseño y control.</li>
+                <li><strong>Receptor de líquido y acumulador de succión:</strong> cumplen funciones en lados distintos del circuito; no se sustituyen uno por otro.</li>
+                <li><strong>Separador de aceite, válvulas de retención y silenciadores:</strong> se incorporan cuando el circuito y las condiciones de trabajo lo requieren.</li>
+                <li><strong>Intercambiadores adicionales:</strong> pueden recuperar calor o adaptarse a sistemas con agua, conductos o múltiples unidades interiores.</li>
+              </ul>
+              <p>Por eso, un diagrama didáctico muestra las funciones básicas; el esquema real puede tener más elementos y una disposición distinta.</p>
+            </div>
+          </details>
+
+          <details class="rc-lesson">
+            <summary><span class="rc-number">06</span><span class="rc-summary-text">Cómo leer el sistema y seguir el recorrido</span><span class="rc-toggle" aria-hidden="true"></span></summary>
+            <div class="rc-lesson-body">
+              <ol class="component-reading-list">
+                <li>Encontrá primero evaporador, compresor, condensador y expansión.</li>
+                <li>Seguí las tuberías para ubicar por dónde circula el refrigerante.</li>
+                <li>Separá ese recorrido del aire que impulsan los ventiladores.</li>
+                <li>Después ubicá filtros, controles, drenaje y accesorios que tenga ese modelo.</li>
+                <li>En una bomba de calor, identificá la válvula inversora y el modo representado.</li>
+              </ol>
+              <div class="component-note"><strong>Importante:</strong> los síntomas no identifican por sí solos una pieza dañada. Diagnosticar requiere medir el sistema y consultar la documentación correspondiente; refrigerante y electricidad deben ser manejados por personal calificado.</div>
+            </div>
+          </details>
+        </div>
+
+        <details class="rc-quiz">
+          <summary>Comprobá lo aprendido <span aria-hidden="true">＋</span></summary>
+          <div class="rc-quiz-body">
+            <ol>
+              <li>¿Qué componente absorbe calor y en cuál se libera al ambiente?</li>
+              <li>¿Qué cambios principales produce el compresor en el vapor?</li>
+              <li>¿En qué se diferencian el filtro de aire y el filtro secador?</li>
+              <li>¿El recipiente de líquido y el acumulador de succión son intercambiables?</li>
+              <li>¿Qué pieza permite invertir el funcionamiento de una bomba de calor?</li>
+            </ol>
+            <p><strong>Respuestas:</strong> el evaporador absorbe y el condensador libera; el compresor aumenta presión y temperatura; uno limpia aire y el otro protege el circuito de refrigerante; no, trabajan en lados y condiciones diferentes; la válvula inversora junto con los controles.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <strong>REFRIGERACIÓN URUGUAY</strong>
+    <span>Material educativo independiente para aprender y comprender.</span>
+  </footer>
+</body>
+</html>
