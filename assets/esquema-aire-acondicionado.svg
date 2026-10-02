@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">Cómo trabaja un aire acondicionado split</title>
+  <desc id="desc">Ilustración técnica original de las unidades interior y exterior, con recorridos separados del aire y el ciclo del refrigerante.</desc>
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f8fcff"/><stop offset="1" stop-color="#eaf6ff"/></linearGradient>
+    <linearGradient id="cold" x2="0" y2="1"><stop stop-color="#dff6ff"/><stop offset="1" stop-color="#83d5ff"/></linearGradient>
+    <linearGradient id="warm" x2="0" y2="1"><stop stop-color="#fff2e6"/><stop offset="1" stop-color="#ffd0a5"/></linearGradient>
+    <linearGradient id="metal" x2="0" y2="1"><stop stop-color="#fff"/><stop offset=".55" stop-color="#dce8f2"/><stop offset="1" stop-color="#b8c9d8"/></linearGradient>
+    <filter id="shadow" x="-.2" y="-.2" width="1.4" height="1.5"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#174a76" flood-opacity=".13"/></filter>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#0788ed"/></marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#ff842a"/></marker>
+    <marker id="arrowDark" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 9 4.5 0 9Z" fill="#526f89"/></marker>
+  </defs>
+  <rect width="1200" height="650" rx="30" fill="url(#bg)"/>
+  <path d="M0 495H1200" stroke="#d7e9f7" stroke-width="3"/>
+  <path d="M600 110V495" stroke="#d7e9f7" stroke-width="3" stroke-dasharray="9 12"/>
+  <text x="76" y="73" fill="#087ff5" font-family="Arial,sans-serif" font-size="20" font-weight="800" letter-spacing="3">AMBIENTE INTERIOR</text>
+  <text x="696" y="73" fill="#087ff5" font-family="Arial,sans-serif" font-size="20" font-weight="800" letter-spacing="3">AMBIENTE EXTERIOR</text>
+  <text x="102" y="112" fill="#637b91" font-family="Arial,sans-serif" font-size="16">El aire circula dentro de la habitación</text>
+  <text x="696" y="112" fill="#637b91" font-family="Arial,sans-serif" font-size="16">El calor que se retira se libera afuera</text>
+  <!-- room air and airflow -->
+  <path d="M200 360C167 321 174 273 215 242" fill="none" stroke="#0788ed" stroke-width="8" stroke-linecap="round" marker-end="url(#arrowBlue)"/>
+  <path d="M282 365C249 323 259 276 300 246" fill="none" stroke="#42b9f4" stroke-width="8" stroke-linecap="round" marker-end="url(#arrowBlue)"/>
+  <path d="M368 362C337 323 345 278 384 247" fill="none" stroke="#0788ed" stroke-width="8" stroke-linecap="round" marker-end="url(#arrowBlue)"/>
+  <text x="112" y="393" fill="#176196" font-family="Arial,sans-serif" font-size="17" font-weight="700">Aire de la habitación</text>
+  <!-- indoor unit -->
+  <g filter="url(#shadow)">
+    <rect x="118" y="154" width="430" height="112" rx="28" fill="url(#metal)" stroke="#9fb7cb" stroke-width="3"/>
+    <rect x="139" y="174" width="388" height="50" rx="16" fill="#fff" opacity=".8"/>
+    <path d="M151 237Q332 270 515 237" fill="none" stroke="#7897ae" stroke-width="5"/>
+    <path d="M167 245h340" stroke="#9ab1c4" stroke-width="3"/>
+    <circle cx="500" cy="187" r="5" fill="#23a7ed"/>
+  </g>
+  <text x="121" y="302" fill="#153d61" font-family="Arial,sans-serif" font-size="21" font-weight="800">UNIDAD INTERIOR</text>
+  <text x="121" y="329" fill="#607b92" font-family="Arial,sans-serif" font-size="16">Filtro · ventilador · evaporador</text>
+  <!-- outdoor unit -->
+  <g filter="url(#shadow)">
+    <rect x="723" y="254" width="355" height="222" rx="24" fill="url(#metal)" stroke="#9fb7cb" stroke-width="3"/>
+    <rect x="744" y="273" width="313" height="185" rx="18" fill="#edf5fa" stroke="#b6c9d8" stroke-width="2"/>
+    <circle cx="883" cy="365" r="72" fill="#dce9f1" stroke="#829bb0" stroke-width="4"/>
+    <circle cx="883" cy="365" r="11" fill="#67849d"/>
+    <g fill="#9bb2c4">
+      <path d="M883 354c8-43 27-54 37-46-4 17-14 34-29 54z"/><path d="M894 365c43 8 54 27 46 37-17-4-34-14-54-29z"/>
+      <path d="M883 376c-8 43-27 54-37 46 4-17 14-34 29-54z"/><path d="M872 365c-43-8-54-27-46-37 17 4 34 14 54 29z"/>
+    </g>
+    <circle cx="883" cy="365" r="66" fill="none" stroke="#8da5b8" stroke-width="2" stroke-dasharray="3 5"/>
+  </g>
+  <text x="728" y="515" fill="#153d61" font-family="Arial,sans-serif" font-size="21" font-weight="800">UNIDAD EXTERIOR</text>
+  <text x="728" y="542" fill="#607b92" font-family="Arial,sans-serif" font-size="16">Compresor · condensador · ventilador</text>
+  <!-- refrigerant loop -->
+  <path d="M518 205H627Q650 205 650 228V355Q650 382 680 382H728" fill="none" stroke="#ff842a" stroke-width="9" stroke-linecap="round" marker-end="url(#arrowOrange)"/>
+  <path d="M728 425H668Q642 425 642 398V298Q642 274 616 274H518" fill="none" stroke="#0788ed" stroke-width="9" stroke-linecap="round" marker-end="url(#arrowBlue)"/>
+  <rect x="564" y="326" width="133" height="62" rx="18" fill="#fff" stroke="#c9dfef" stroke-width="2"/>
+  <text x="630" y="351" text-anchor="middle" fill="#153d61" font-family="Arial,sans-serif" font-size="14" font-weight="800">TUBERÍAS</text>
+  <text x="630" y="371" text-anchor="middle" fill="#607b92" font-family="Arial,sans-serif" font-size="13">refrigerante</text>
+  <!-- heat -->
+  <path d="M1025 185q-23-24 0-48m31 48q-23-24 0-48m31 48q-23-24 0-48" fill="none" stroke="#ff842a" stroke-width="7" stroke-linecap="round" marker-end="url(#arrowOrange)"/>
+  <text x="894" y="164" fill="#c65e13" font-family="Arial,sans-serif" font-size="17" font-weight="700">Calor hacia el exterior</text>
+  <!-- indoor exchanger -->
+  <path d="M448 179v63m14-63v63m14-63v63m14-63v63" stroke="#198ad7" stroke-width="4" opacity=".8"/>
+  <!-- separation cue -->
+  <rect x="390" y="567" width="420" height="45" rx="22" fill="#fff" stroke="#cce4f6"/>
+  <circle cx="420" cy="589" r="7" fill="#0788ed"/>
+  <text x="600" y="595" text-anchor="middle" fill="#315a7b" font-family="Arial,sans-serif" font-size="16" font-weight="700">Dos flujos de aire separados · un circuito de refrigerante</text>
+</svg>
