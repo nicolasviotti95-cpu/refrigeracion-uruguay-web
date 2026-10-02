@@ -2210,6 +2210,22 @@ footer strong {
     color: var(--rc-ink);
 }
 
+.refrigerant-sources {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.refrigerant-sources a {
+    color: var(--rc-blue-dark);
+    font-weight: 750;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.refrigerant-sources a:hover {
+    color: var(--rc-blue);
+}
+
 @media (max-width: 760px) {
     .rc-section {
         padding: 54px 17px;
