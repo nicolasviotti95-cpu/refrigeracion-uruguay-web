@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 570" role="img" aria-labelledby="title desc">
+  <title id="title">Los cuatro componentes principales de un sistema frigorífico</title>
+  <desc id="desc">Diagrama original del recorrido de refrigerante por el evaporador, compresor, condensador y dispositivo de expansión.</desc>
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f9fcff"/><stop offset="1" stop-color="#eaf6ff"/></linearGradient>
+    <filter id="shadow" x="-.2" y="-.2" width="1.4" height="1.5"><feDropShadow dx="0" dy="9" stdDeviation="10" flood-color="#164a74" flood-opacity=".1"/></filter>
+  </defs>
+  <rect width="1200" height="570" rx="30" fill="url(#bg)"/>
+  <text x="600" y="58" text-anchor="middle" fill="#087ff5" font-family="Arial,sans-serif" font-size="19" font-weight="800" letter-spacing="3">EL CIRCUITO FRIGORÍFICO</text>
+  <text x="600" y="88" text-anchor="middle" fill="#627a90" font-family="Arial,sans-serif" font-size="16">Cada componente transforma las condiciones del refrigerante o intercambia calor</text>
+  <!-- connecting pipes behind the cards -->
+  <path d="M280 260H315" fill="none" stroke="#53bff0" stroke-width="11" stroke-linecap="round"/>
+  <path d="m299 249 17 11-17 11Z" fill="#168ee0"/>
+  <path d="M575 260H610" fill="none" stroke="#ff9a4a" stroke-width="11" stroke-linecap="round"/>
+  <path d="m594 249 17 11-17 11Z" fill="#ee7620"/>
+  <path d="M870 260H905" fill="none" stroke="#ffb35e" stroke-width="11" stroke-linecap="round"/>
+  <path d="m889 249 17 11-17 11Z" fill="#ef8b2d"/>
+  <path d="M1037 385v77H160v-77" fill="none" stroke="#168ee0" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m149 405 11-18 11 18Z" fill="#168ee0"/>
+  <rect x="30" y="130" width="250" height="255" rx="22" fill="#fff" stroke="#cce5f8" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="325" y="130" width="250" height="255" rx="22" fill="#fff" stroke="#cce5f8" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="620" y="130" width="250" height="255" rx="22" fill="#fff" stroke="#ffe0c6" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="915" y="130" width="250" height="255" rx="22" fill="#fff" stroke="#cce5f8" stroke-width="2" filter="url(#shadow)"/>
+  <!-- evaporator coil -->
+  <path d="M77 196v72h22v-72h22v72h22v-72h22v72h22v-72h22v72h22v-72" fill="none" stroke="#178ee2" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M70 205h169M70 221h169M70 237h169M70 253h169" stroke="#a7dafa" stroke-width="3"/>
+  <path d="M82 178v-22m42 22v-22m42 22v-22m42 22v-22" stroke="#ff8c36" stroke-width="4" stroke-linecap="round"/>
+  <path d="m76 161 6-9 6 9m30 0 6-9 6 9m30 0 6-9 6 9m30 0 6-9 6 9" fill="#ff8c36"/>
+  <text x="155" y="310" text-anchor="middle" fill="#153d61" font-family="Arial,sans-serif" font-size="19" font-weight="800">EVAPORADOR</text>
+  <text x="155" y="338" text-anchor="middle" fill="#607b92" font-family="Arial,sans-serif" font-size="15">absorbe calor</text>
+  <text x="155" y="360" text-anchor="middle" fill="#1680cb" font-family="Arial,sans-serif" font-size="13" font-weight="700">BAJA PRESIÓN</text>
+  <!-- compressor -->
+  <path d="M400 269v-57c0-22 17-38 50-38s50 16 50 38v57c0 11-14 17-50 17s-50-6-50-17Z" fill="#e7f1f8" stroke="#496c88" stroke-width="5"/>
+  <path d="M420 205c14-13 46-13 60 0M420 254h60m-66 25h72" fill="none" stroke="#7594ac" stroke-width="4" stroke-linecap="round"/>
+  <path d="M450 174v-15m33 15 18-14" fill="none" stroke="#496c88" stroke-width="4" stroke-linecap="round"/>
+  <text x="450" y="310" text-anchor="middle" fill="#153d61" font-family="Arial,sans-serif" font-size="19" font-weight="800">COMPRESOR</text>
+  <text x="450" y="338" text-anchor="middle" fill="#607b92" font-family="Arial,sans-serif" font-size="15">eleva presión y temperatura</text>
+  <text x="450" y="360" text-anchor="middle" fill="#d5681c" font-family="Arial,sans-serif" font-size="13" font-weight="700">APORTA ENERGÍA</text>
+  <!-- condenser coil -->
+  <path d="M667 196v72h22v-72h22v72h22v-72h22v72h22v-72h22v72h22v-72" fill="none" stroke="#ff862c" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M660 205h169M660 221h169M660 237h169M660 253h169" stroke="#ffd4af" stroke-width="3"/>
+  <path d="M680 178v-22m42 22v-22m42 22v-22m42 22v-22" stroke="#ff862c" stroke-width="4" stroke-linecap="round"/>
+  <path d="m674 161 6-9 6 9m30 0 6-9 6 9m30 0 6-9 6 9m30 0 6-9 6 9" fill="#ff862c"/>
+  <text x="745" y="310" text-anchor="middle" fill="#153d61" font-family="Arial,sans-serif" font-size="19" font-weight="800">CONDENSADOR</text>
+  <text x="745" y="338" text-anchor="middle" fill="#607b92" font-family="Arial,sans-serif" font-size="15">libera calor</text>
+  <text x="745" y="360" text-anchor="middle" fill="#d5681c" font-family="Arial,sans-serif" font-size="13" font-weight="700">ALTA PRESIÓN</text>
+  <!-- expansion valve -->
+  <path d="M948 232h43m47 0h45" stroke="#718ba1" stroke-width="8" stroke-linecap="round"/>
+  <path d="m991 202 24 30-24 30Zm47 0-24 30 24 30Z" fill="#f5b442" stroke="#c9871d" stroke-width="3"/>
+  <path d="M1015 201v-26m-18 0h36" stroke="#718ba1" stroke-width="5" stroke-linecap="round"/>
+  <text x="1040" y="310" text-anchor="middle" fill="#153d61" font-family="Arial,sans-serif" font-size="17" font-weight="800">EXPANSIÓN</text>
+  <text x="1040" y="338" text-anchor="middle" fill="#607b92" font-family="Arial,sans-serif" font-size="15">regula el caudal</text>
+  <text x="1040" y="360" text-anchor="middle" fill="#1680cb" font-family="Arial,sans-serif" font-size="13" font-weight="700">REDUCE PRESIÓN</text>
+  <rect x="380" y="485" width="440" height="48" rx="24" fill="#fff" stroke="#cce5f8" stroke-width="2"/>
+  <text x="600" y="515" text-anchor="middle" fill="#315a7b" font-family="Arial,sans-serif" font-size="16" font-weight="700">El refrigerante vuelve al evaporador y el ciclo continúa</text>
+</svg>
