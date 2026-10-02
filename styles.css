@@ -1,3 +1,1311 @@
+/* =========================================================
+   REFRIGERACIÓN URUGUAY
+   ESTILOS PRINCIPALES
+========================================================= */
+
+:root {
+    --blue: #087ff5;
+    --blue-dark: #0d4278;
+    --cyan: #42c8ff;
+    --orange: #ff7a18;
+
+    --navy: #10355d;
+    --text: #183b61;
+    --muted: #60748b;
+
+    --background: #f7fbff;
+    --white: #ffffff;
+
+    --border: #d9e9f6;
+
+    --shadow: 0 15px 40px rgba(16, 53, 93, 0.08);
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: var(--background);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+    height: 74px;
+    padding: 0 5%;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    background: var(--white);
+
+    border-bottom: 1px solid #e3edf6;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+/* LOGO */
+
+.logo {
+    min-width: 245px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    font-size: 32px;
+    color: #159de9;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-text strong {
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: 0.5px;
+}
+
+.logo-text small {
+    margin-top: 3px;
+
+    font-size: 19px;
+    line-height: 1;
+
+    letter-spacing: 3px;
+
+    color: #159de9;
+}
+
+
+/* NAV */
+
+.main-nav {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 24px;
+}
+
+.main-nav a {
+    padding: 27px 0;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    color: #455c73;
+
+    white-space: nowrap;
+
+    border-bottom: 2px solid transparent;
+
+    transition: 0.2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--blue);
+    border-bottom-color: var(--blue);
+}
+
+
+/* HEADER BUTTON */
+
+.header-button {
+    padding: 12px 21px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #087ff5,
+        #159ff5
+    );
+
+    border-radius: 999px;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    box-shadow:
+        0 10px 25px rgba(8, 127, 245, 0.17);
+}
+
+.header-button span {
+    font-size: 19px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    min-height: 600px;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+
+    background:
+        linear-gradient(
+            115deg,
+            #f5fbff 0%,
+            #e5f7ff 100%
+        );
+}
+
+
+/* TEXTO HERO */
+
+.hero-content {
+    width: 54%;
+
+    position: relative;
+    z-index: 2;
+
+    padding:
+        90px
+        0
+        80px
+        7%;
+}
+
+.eyebrow {
+    display: block;
+
+    margin-bottom: 13px;
+
+    font-size: 11px;
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+    color: var(--blue);
+}
+
+.hero h1 {
+    margin: 0 0 22px;
+
+    font-size: 54px;
+
+    line-height: 1.02;
+
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    color: var(--blue);
+}
+
+.hero-content > p:not(.eyebrow) {
+    max-width: 560px;
+
+    margin: 0;
+
+    color: #526a81;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+}
+
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+    margin-top: 29px;
+
+    display: flex;
+    gap: 13px;
+}
+
+.button-primary,
+.button-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 23px;
+
+    border-radius: 999px;
+
+    font-weight: 800;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.button-primary {
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #087ff5,
+            #159ff5
+        );
+
+    box-shadow:
+        0 12px 28px rgba(8, 127, 245, 0.2);
+}
+
+.button-primary:hover,
+.button-secondary:hover,
+.header-button:hover {
+    transform: translateY(-2px);
+}
+
+.button-primary span,
+.button-secondary span,
+.button-white span {
+    font-size: 20px;
+}
+
+
+/* SEGUNDO BOTÓN */
+
+.button-secondary {
+    color: var(--navy);
+
+    background: white;
+
+    box-shadow:
+        0 10px 25px rgba(16, 53, 93, 0.09);
+}
+
+
+/* HERO IMAGE */
+
+.hero-image {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 55%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d9f5ff,
+            #eefbff
+        );
+}
+
+.hero-image::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(247, 251, 255, 0.95),
+            rgba(247, 251, 255, 0.15) 45%,
+            transparent
+        );
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   SECCIÓN DE TEMAS
+========================================================= */
+
+.main-topics {
+    padding: 80px 5.5%;
+
+    text-align: center;
+
+    background: var(--background);
+}
+
+.section-heading {
+    max-width: 800px;
+
+    margin:
+        0
+        auto
+        38px;
+}
+
+.section-heading h2 {
+    margin: 0 0 15px;
+
+    font-size: 39px;
+
+    line-height: 1.1;
+
+    letter-spacing: -1px;
+}
+
+.section-heading p {
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    color: var(--muted);
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   TARJETAS
+========================================================= */
+
+.topic-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+
+    text-align: left;
+}
+
+.topic-card {
+    min-height: 360px;
+
+    padding: 23px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 17px;
+
+    background: white;
+
+    box-shadow: var(--shadow);
+}
+
+
+/* COLORES TARJETAS */
+
+.topic-card.refrigeration {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #edf8ff
+        );
+}
+
+.topic-card.air-conditioning {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f0fbff
+        );
+}
+
+.topic-card.components {
+    background:
+        linear-gradient(
+            145deg,
+            #fff7ef,
+            #ffffff
+        );
+}
+
+
+/* ICONOS */
+
+.topic-icon {
+    width: 43px;
+    height: 43px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    color: white;
+
+    font-size: 21px;
+
+    background: var(--blue);
+}
+
+.air-conditioning .topic-icon {
+    background: #25b8ec;
+}
+
+.components .topic-icon {
+    background: var(--orange);
+}
+
+
+/* ILUSTRACIÓN TARJETA */
+
+.topic-image {
+    height: 105px;
+
+    display: grid;
+    place-items: center;
+
+    font-size: 68px;
+
+    color: #a9ddf8;
+}
+
+.topic-image.dark {
+    color: #26394d;
+}
+
+
+/* TEXTO TARJETAS */
+
+.topic-card h3 {
+    margin: 4px 0;
+
+    font-size: 24px;
+}
+
+.topic-card h4 {
+    margin: 0;
+
+    font-size: 13px;
+
+    color: var(--blue);
+}
+
+.topic-card p {
+    margin:
+        13px
+        0
+        15px;
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.55;
+}
+
+.topic-card a {
+    color: var(--blue);
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+.topic-card.components h4,
+.topic-card.components a {
+    color: var(--orange);
+}
+
+
+/* =========================================================
+   CICLO FRIGORÍFICO
+========================================================= */
+
+.cycle-section {
+    padding:
+        80px
+        6%;
+
+    display: grid;
+
+    grid-template-columns:
+        0.9fr
+        1.1fr;
+
+    gap: 55px;
+
+    align-items: center;
+
+    background: #edf8ff;
+}
+
+.cycle-text h2 {
+    margin: 0 0 15px;
+
+    font-size: 39px;
+
+    line-height: 1.1;
+
+    letter-spacing: -1px;
+}
+
+.cycle-text > p:not(.eyebrow) {
+    max-width: 550px;
+
+    margin:
+        0
+        0
+        27px;
+
+    color: var(--muted);
+
+    line-height: 1.65;
+}
+
+
+/* DIAGRAMA */
+
+.cycle-diagram {
+    min-height: 310px;
+
+    padding: 30px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap: 14px;
+
+    position: relative;
+
+    border:
+        1px solid #c9e8fa;
+
+    border-radius: 23px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #dcf4ff
+        );
+
+    box-shadow:
+        0 18px 40px rgba(16, 53, 93, 0.07);
+}
+
+.cycle-step {
+    padding: 15px;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 9px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 13px;
+
+    background: white;
+}
+
+.cycle-step > span {
+    width: 28px;
+    height: 28px;
+
+    flex-shrink: 0;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    color: white;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    background: var(--blue);
+}
+
+.cycle-step strong {
+    display: block;
+
+    font-size: 12px;
+}
+
+.cycle-step small {
+    display: block;
+
+    margin-top: 7px;
+
+    color: var(--muted);
+
+    font-size: 10px;
+
+    line-height: 1.4;
+}
+
+.cycle-flow {
+    grid-column: 1 / -1;
+
+    align-self: end;
+
+    padding-top: 5px;
+
+    text-align: center;
+
+    color: var(--blue);
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 0.5px;
+}
+
+.cycle-flow span {
+    margin: 0 7px;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   GASES REFRIGERANTES
+========================================================= */
+
+.refrigerant-section {
+    padding:
+        80px
+        6%;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap: 55px;
+
+    background: white;
+}
+
+.refrigerant-content h2 {
+    margin: 0 0 15px;
+
+    font-size: 39px;
+
+    line-height: 1.1;
+
+    letter-spacing: -1px;
+}
+
+.refrigerant-content p {
+    max-width: 600px;
+
+    margin:
+        0
+        0
+        25px;
+
+    color: var(--muted);
+
+    line-height: 1.65;
+}
+
+
+/* BOTÓN AZUL CLARO */
+
+.button-secondary.blue {
+    color: var(--blue);
+
+    background: #eaf6ff;
+
+    box-shadow: none;
+}
+
+
+/* TEMAS DE GASES */
+
+.refrigerant-topics {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-content: center;
+
+    gap: 12px;
+}
+
+.refrigerant-topics span {
+    padding: 15px 17px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 12px;
+
+    background: #f7fbff;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   MATERIAL EDUCATIVO
+========================================================= */
+
+.learning-section {
+    padding:
+        70px
+        6%;
+
+    display: grid;
+
+    grid-template-columns:
+        0.75fr
+        1.25fr;
+
+    gap: 45px;
+
+    align-items: center;
+
+    background: #e5f6ff;
+}
+
+.learning-title h2 {
+    margin: 0;
+
+    font-size: 31px;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.7px;
+}
+
+
+/* GRID */
+
+.learning-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 10px;
+}
+
+.learning-grid > div {
+    padding: 17px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    background: white;
+
+    color: var(--blue);
+}
+
+.learning-grid > div > span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 24px;
+}
+
+.learning-grid strong,
+.learning-grid small {
+    display: block;
+}
+
+.learning-grid strong {
+    font-size: 11px;
+
+    color: var(--navy);
+}
+
+.learning-grid small {
+    margin-top: 3px;
+
+    font-size: 9px;
+
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   CTA FINAL
+========================================================= */
+
+.final-cta {
+    padding:
+        55px
+        7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            110deg,
+            #0e4278,
+            #082d55
+        );
+}
+
+.final-cta > div > span {
+    color: #58c9ff;
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+.final-cta h2 {
+    max-width: 700px;
+
+    margin: 10px 0 0;
+
+    font-size: 26px;
+
+    line-height: 1.3;
+}
+
+.button-white {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 14px 23px;
+
+    color: var(--navy);
+
+    background: white;
+
+    border-radius: 999px;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    padding:
+        25px
+        6%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    color: #b8cce0;
+
+    font-size: 11px;
+
+    background: #06284d;
+}
+
+footer strong {
+    color: white;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .main-nav {
+        gap: 12px;
+    }
+
+    .main-nav a {
+        font-size: 11px;
+    }
+
+    .hero-content {
+        width: 60%;
+    }
+
+    .hero-image {
+        width: 52%;
+    }
+
+    .topic-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cycle-section,
+    .refrigerant-section,
+    .learning-section {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+    .site-header {
+        height: auto;
+
+        padding: 15px 5%;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .logo {
+        min-width: auto;
+    }
+
+    .main-nav {
+        order: 3;
+
+        width: 100%;
+
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+        gap: 20px;
+    }
+
+    .main-nav a {
+        padding: 7px 0;
+
+        white-space: nowrap;
+    }
+
+    .header-button {
+        margin-left: auto;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 690px;
+    }
+
+    .hero-content {
+        width: 100%;
+
+        padding:
+            55px
+            7%
+            0;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+
+        letter-spacing: -1.5px;
+    }
+
+    .hero-content > p:not(.eyebrow) {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+
+    .hero-image {
+        width: 100%;
+
+        height: 330px;
+
+        top: auto;
+        bottom: 0;
+
+        opacity: 0.8;
+    }
+
+    .hero-image::before {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(247, 251, 255, 1),
+                rgba(247, 251, 255, 0)
+            );
+    }
+
+
+    /* SECCIONES */
+
+    .main-topics,
+    .cycle-section,
+    .refrigerant-section,
+    .learning-section {
+        padding:
+            55px
+            6%;
+    }
+
+    .section-heading h2,
+    .cycle-text h2,
+    .refrigerant-content h2 {
+        font-size: 31px;
+    }
+
+
+    /* CICLO */
+
+    .cycle-diagram {
+        padding: 18px;
+
+        min-height: auto;
+
+        grid-template-columns: 1fr;
+    }
+
+    .cycle-flow {
+        grid-column: auto;
+
+        line-height: 1.8;
+    }
+
+
+    /* LEARNING */
+
+    .learning-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* CTA */
+
+    .final-cta {
+        display: block;
+
+        padding:
+            50px
+            7%;
+    }
+
+    .button-white {
+        margin-top: 25px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        display: block;
+
+        padding:
+            25px
+            6%;
+    }
+
+    footer span {
+        display: block;
+
+        margin-top: 9px;
+    }
+
+}
+/* =========================================================
+   HERO COMPLETO - IMAGEN DEFINITIVA
+========================================================= */
+
+.hero {
+    min-height: 0;
+    height: auto;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background: #f5fbff;
+}
+
+.hero-content {
+    display: none;
+}
+
+.hero-image {
+    position: relative;
+    top: auto;
+    right: auto;
+
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    overflow: hidden;
+
+    background: transparent;
+}
+
+.hero-image::before {
+    display: none;
+}
+
+.hero-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   BOTONES CLICKEABLES SOBRE LA IMAGEN
+========================================================= */
+
+.hero-hotspot {
+    position: absolute;
+
+    display: block;
+
+    z-index: 10;
+
+    cursor: pointer;
+
+    /* Invisible */
+    background: transparent;
+}
+
+
+/* BOTÓN "COMENZAR" DE LA IMAGEN */
+
+.hotspot-comenzar {
+    left: 5.5%;
+    top: 75%;
+    width: 21%;
+    height: 10%;
+}
+
+
+/* BOTÓN "VER TEMAS" DE LA IMAGEN */
+
+.hotspot-temas {
+    left: 28%;
+    top: 75%;
+    width: 15%;
+    height: 10%;
+}
+
+
+/* =========================================================
+   MÓVIL
+========================================================= */
+
+@media (max-width: 760px) {
+
+    .hero {
+        min-height: 0;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hotspot-comenzar {
+        left: 5.5%;
+        top: 75%;
+        width: 21%;
+        height: 10%;
+    }
+
+    .hotspot-temas {
+        left: 28%;
+        top: 75%;
+        width: 15%;
+        height: 10%;
+    }
+}
+
 /* GASES REFRIGERANTES */
 .refrigerant-section {
     display: block;
@@ -193,3 +1501,4 @@
         font-size: 31px;
     }
 }
+
