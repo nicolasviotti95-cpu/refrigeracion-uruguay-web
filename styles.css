@@ -1534,3 +1534,522 @@ footer strong {
   color: #fff;
   background: #0d6fd0;
 }
+/* Estilos exclusivos del apartado de Refrigeración */
+.rc-section {
+    --rc-ink: #123a63;
+    --rc-blue: #087ff5;
+    --rc-blue-dark: #075db2;
+    --rc-cyan: #20b5e8;
+    --rc-orange: #f47721;
+    --rc-text: #506d8d;
+    --rc-line: #d4e8f8;
+    --rc-panel: #ffffff;
+    --rc-bg: #f1f8fe;
+    background: linear-gradient(180deg, #f1f8fe 0%, #e9f5fd 100%);
+    color: var(--rc-ink);
+    padding: clamp(54px, 7vw, 96px) 24px;
+    scroll-margin-top: 110px;
+}
+
+.rc-section * {
+    box-sizing: border-box;
+}
+
+.rc-wrap {
+    width: min(1120px, 100%);
+    margin: 0 auto;
+}
+
+.rc-heading {
+    max-width: 780px;
+    margin: 0 auto 34px;
+    text-align: center;
+    scroll-margin-top: 110px;
+}
+
+.rc-eyebrow {
+    display: inline-block;
+    margin-bottom: 13px;
+    color: var(--rc-blue);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+}
+
+.rc-heading h2 {
+    margin: 0;
+    color: var(--rc-ink);
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -.035em;
+}
+
+.rc-heading > p,
+.rc-lessons-heading > p {
+    max-width: 720px;
+    margin: 18px auto 0;
+    color: var(--rc-text);
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.rc-diagram {
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid var(--rc-line);
+    border-radius: 26px;
+    background: var(--rc-panel);
+    box-shadow: 0 18px 48px rgba(20, 69, 112, .08);
+}
+
+.rc-diagram img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.rc-diagram figcaption {
+    padding: 0 26px 22px;
+    color: var(--rc-text);
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.rc-key-idea {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: start;
+    gap: 16px 24px;
+    margin: 24px 0 66px;
+    padding: 26px 30px;
+    border: 1px solid #bfe1ff;
+    border-radius: 20px;
+    background: #e5f4ff;
+}
+
+.rc-key-label {
+    padding-top: 4px;
+    color: var(--rc-blue-dark);
+    font-size: 12px;
+    font-weight: 850;
+    letter-spacing: .12em;
+}
+
+.rc-key-idea p {
+    margin: 0;
+    color: var(--rc-ink);
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.rc-lessons-heading {
+    margin: 0 0 22px;
+    text-align: center;
+}
+
+.rc-lessons-heading .rc-eyebrow {
+    margin-bottom: 10px;
+}
+
+.rc-lessons-heading h3 {
+    margin: 0;
+    color: var(--rc-ink);
+    font-size: clamp(25px, 3.5vw, 36px);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.rc-lessons-heading > p {
+    margin-top: 9px;
+    font-size: 15px;
+}
+
+.rc-lessons {
+    display: grid;
+    gap: 12px;
+}
+
+.rc-lesson {
+    overflow: hidden;
+    border: 1px solid var(--rc-line);
+    border-radius: 18px;
+    background: var(--rc-panel);
+    box-shadow: 0 5px 18px rgba(20, 69, 112, .035);
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.rc-lesson[open] {
+    border-color: #a8d4fb;
+    box-shadow: 0 10px 28px rgba(20, 69, 112, .07);
+}
+
+.rc-lesson > summary {
+    display: flex;
+    min-height: 76px;
+    align-items: center;
+    gap: 17px;
+    padding: 15px 22px;
+    color: var(--rc-ink);
+    cursor: pointer;
+    list-style: none;
+}
+
+.rc-lesson > summary::-webkit-details-marker,
+.rc-quiz > summary::-webkit-details-marker {
+    display: none;
+}
+
+.rc-number {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    place-items: center;
+    border-radius: 13px;
+    background: #e7f4ff;
+    color: var(--rc-blue-dark);
+    font-size: 13px;
+    font-weight: 850;
+}
+
+.rc-summary-text {
+    flex: 1;
+    font-size: 18px;
+    font-weight: 750;
+    line-height: 1.35;
+}
+
+.rc-toggle {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    flex: 0 0 28px;
+    border-radius: 50%;
+    background: #edf6fe;
+}
+
+.rc-toggle::before,
+.rc-toggle::after {
+    position: absolute;
+    top: 13px;
+    left: 8px;
+    width: 12px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--rc-blue);
+    content: "";
+}
+
+.rc-toggle::after {
+    transform: rotate(90deg);
+    transition: transform .2s ease;
+}
+
+.rc-lesson[open] .rc-toggle::after {
+    transform: rotate(0);
+}
+
+.rc-lesson > summary:focus-visible,
+.rc-quiz > summary:focus-visible {
+    outline: 3px solid rgba(8, 127, 245, .38);
+    outline-offset: -3px;
+}
+
+.rc-lesson-body {
+    padding: 0 26px 26px 81px;
+    color: var(--rc-text);
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.rc-lesson-body > :first-child {
+    margin-top: 0;
+}
+
+.rc-lesson-body p {
+    margin: 0 0 15px;
+}
+
+.rc-lesson-body strong,
+.rc-lesson-body em {
+    color: var(--rc-ink);
+}
+
+.rc-two-columns,
+.rc-stage-grid,
+.rc-method-grid,
+.rc-application-grid {
+    display: grid;
+    gap: 12px;
+    margin: 16px 0;
+}
+
+.rc-two-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.rc-note {
+    padding: 18px 20px;
+    border: 1px solid #d8eafb;
+    border-radius: 15px;
+    background: #f7fbff;
+}
+
+.rc-note-cold {
+    border-color: #caeaff;
+    background: #f0f9ff;
+}
+
+.rc-note-warm {
+    border-color: #ffe0c8;
+    background: #fff8f2;
+}
+
+.rc-note h4,
+.rc-stage h4,
+.rc-method h4 {
+    margin: 0 0 6px;
+    color: var(--rc-ink);
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.rc-note p,
+.rc-stage p,
+.rc-method p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.rc-stage-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.rc-stage {
+    position: relative;
+    min-height: 150px;
+    padding: 19px 20px 18px 62px;
+    border: 1px solid #d8eafb;
+    border-radius: 16px;
+    background: #f7fbff;
+}
+
+.rc-stage > span {
+    position: absolute;
+    top: 18px;
+    left: 17px;
+    display: grid;
+    width: 32px;
+    height: 32px;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--rc-blue);
+    color: white;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.rc-stage-warm {
+    border-color: #ffe0c8;
+    background: #fff8f2;
+}
+
+.rc-stage-warm > span {
+    background: var(--rc-orange);
+}
+
+.rc-stage h4 {
+    margin-top: 4px;
+}
+
+.rc-takeaway {
+    margin: 12px 0 0 !important;
+    color: var(--rc-blue-dark);
+    font-weight: 750;
+}
+
+.rc-state-list {
+    display: grid;
+    gap: 11px;
+    margin: 12px 0 18px;
+    padding-left: 20px;
+}
+
+.rc-state-list li::marker {
+    color: var(--rc-blue);
+}
+
+.rc-method-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.rc-method {
+    padding: 17px;
+    border: 1px solid #d8eafb;
+    border-radius: 15px;
+    background: #f7fbff;
+}
+
+.rc-application-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 18px;
+}
+
+.rc-application-grid > div {
+    display: grid;
+    gap: 5px;
+    padding: 15px 16px;
+    border-radius: 14px;
+    background: #eaf5fe;
+}
+
+.rc-application-grid strong {
+    color: var(--rc-blue-dark);
+    font-size: 14px;
+}
+
+.rc-application-grid span {
+    color: var(--rc-text);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.rc-quiz {
+    margin-top: 25px;
+    overflow: hidden;
+    border: 1px solid #b9dcfb;
+    border-radius: 18px;
+    background: #e6f4ff;
+}
+
+.rc-quiz > summary {
+    display: flex;
+    min-height: 68px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 16px 22px;
+    color: var(--rc-blue-dark);
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 800;
+    list-style: none;
+}
+
+.rc-quiz > summary span {
+    font-size: 23px;
+}
+
+.rc-quiz-body {
+    padding: 0 24px 22px;
+    color: var(--rc-text);
+    line-height: 1.7;
+}
+
+.rc-quiz-body ol {
+    display: grid;
+    gap: 8px;
+    padding-left: 22px;
+}
+
+.rc-quiz-body li::marker {
+    color: var(--rc-blue);
+    font-weight: 800;
+}
+
+.rc-quiz-body > p {
+    margin: 17px 0 0;
+    padding-top: 15px;
+    border-top: 1px solid #c8e3fa;
+}
+
+.rc-quiz-body > p strong {
+    color: var(--rc-ink);
+}
+
+@media (max-width: 760px) {
+    .rc-section {
+        padding: 54px 17px;
+    }
+
+    .rc-key-idea {
+        grid-template-columns: 1fr;
+        gap: 9px;
+        margin-bottom: 48px;
+        padding: 21px;
+    }
+
+    .rc-diagram {
+        border-radius: 18px;
+    }
+
+    .rc-diagram figcaption {
+        padding: 0 17px 17px;
+        font-size: 13px;
+    }
+
+    .rc-lesson > summary {
+        min-height: 70px;
+        gap: 12px;
+        padding: 13px 15px;
+    }
+
+    .rc-number {
+        width: 36px;
+        height: 36px;
+        flex-basis: 36px;
+    }
+
+    .rc-summary-text {
+        font-size: 16px;
+    }
+
+    .rc-lesson-body {
+        padding: 0 17px 21px;
+        font-size: 15px;
+    }
+
+    .rc-stage-grid,
+    .rc-method-grid,
+    .rc-application-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rc-stage {
+        min-height: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .rc-two-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .rc-lesson > summary {
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .rc-toggle {
+        width: 25px;
+        height: 25px;
+        flex-basis: 25px;
+    }
+
+    .rc-toggle::before,
+    .rc-toggle::after {
+        top: 11px;
+        left: 7px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .rc-lesson,
+    .rc-toggle::after {
+        transition: none;
+    }
+}
