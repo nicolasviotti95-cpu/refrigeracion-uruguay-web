@@ -1187,3 +1187,121 @@ footer strong {
     }
 
 }
+/* =========================================================
+   HERO COMPLETO - IMAGEN DEFINITIVA
+========================================================= */
+
+.hero {
+    min-height: 0;
+    height: auto;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background: #f5fbff;
+}
+
+.hero-content {
+    display: none;
+}
+
+.hero-image {
+    position: relative;
+    top: auto;
+    right: auto;
+
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    overflow: hidden;
+
+    background: transparent;
+}
+
+.hero-image::before {
+    display: none;
+}
+
+.hero-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   BOTONES CLICKEABLES SOBRE LA IMAGEN
+========================================================= */
+
+.hero-hotspot {
+    position: absolute;
+
+    display: block;
+
+    z-index: 10;
+
+    cursor: pointer;
+
+    /* Invisible */
+    background: transparent;
+}
+
+
+/* BOTÓN "COMENZAR" DE LA IMAGEN */
+
+.hotspot-comenzar {
+    left: 5.5%;
+    top: 75%;
+    width: 21%;
+    height: 10%;
+}
+
+
+/* BOTÓN "VER TEMAS" DE LA IMAGEN */
+
+.hotspot-temas {
+    left: 28%;
+    top: 75%;
+    width: 15%;
+    height: 10%;
+}
+
+
+/* =========================================================
+   MÓVIL
+========================================================= */
+
+@media (max-width: 760px) {
+
+    .hero {
+        min-height: 0;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hotspot-comenzar {
+        left: 5.5%;
+        top: 75%;
+        width: 21%;
+        height: 10%;
+    }
+
+    .hotspot-temas {
+        left: 28%;
+        top: 75%;
+        width: 15%;
+        height: 10%;
+    }
+}
